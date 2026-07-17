@@ -1,0 +1,701 @@
+/* ============================================================
+   HERO SECTION – Vomwe Group Premium Refined
+   ============================================================ */
+
+/* ---------- Hero Base ---------- */
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    min-height: 600px;
+}
+
+/* ---------- Background Video ---------- */
+.hero-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+/* Fallback background image if video fails */
+.hero-bg-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(135deg, #0f2b5c 0%, #0b132b 100%);
+    display: none;
+}
+
+/* ---------- Hero Overlay ---------- */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(15, 43, 92, 0.85) 45%,
+        rgba(11, 19, 43, 0.5) 100%
+    );
+    z-index: 1;
+}
+
+/* ---------- Hero Container ---------- */
+.hero-container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+}
+
+/* ---------- Hero Text Area ---------- */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 640px;
+    position: relative;
+    animation: heroFadeSlide 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes heroFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ---------- Trust Badge / Super Tag ---------- */
+.hero-super-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 36px;
+}
+
+.hero-super-tag::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 24px;
+    height: 1.5px;
+    background: var(--accent-gold, #dfb76c);
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.hero-super-tag i {
+    font-size: 0.75rem;
+    color: var(--accent-gold, #dfb76c);
+}
+
+/* ---------- Main Headline ---------- */
+.hero-text h1 {
+    font-size: clamp(2.6rem, 4vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+    color: #fff;
+    margin: 0;
+}
+
+.hero-text h1 .gold-highlight {
+    font-weight: 400;
+    background: linear-gradient(90deg, #dfb76c 0%, #f0d28c 60%, #dfb76c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 4px 30px rgba(223, 183, 108, 0.12));
+    animation: heroGlowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlowPulse {
+    0% {
+        filter: drop-shadow(0 4px 20px rgba(223, 183, 108, 0.08));
+    }
+    100% {
+        filter: drop-shadow(0 8px 40px rgba(223, 183, 108, 0.18));
+    }
+}
+
+/* ---------- Sub Text ---------- */
+.hero-text .hero-sub {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+.hero-text .hero-sub strong {
+    color: var(--accent-gold, #dfb76c);
+    font-weight: 400;
+}
+
+/* ---------- Hero Metrics (Trust Indicators) ---------- */
+.hero-metrics-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 0.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-metrics-inline .metric-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero-metrics-inline .metric-item i {
+    color: var(--accent-gold, #dfb76c);
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ---------- Hero Buttons ---------- */
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.hero-btns .btn-primary {
+    background: var(--accent-gold, #dfb76c);
+    color: #0f2b5c;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 30px rgba(223, 183, 108, 0.2);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.hero-btns .btn-primary:hover {
+    background: #c9a55a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 40px rgba(223, 183, 108, 0.3);
+}
+
+.hero-btns .btn-secondary {
+    background: transparent;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.hero-btns .btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-2px);
+}
+
+/* ---------- Scroll Down Arrow ---------- */
+.scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    animation: heroBounce 2.5s infinite ease-in-out;
+}
+
+.scroll-down:hover {
+    color: var(--accent-gold, #dfb76c);
+}
+
+.scroll-down .scroll-arrow {
+    width: 20px;
+    height: 20px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    opacity: 0.5;
+}
+
+@keyframes heroBounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(6px);
+    }
+}
+
+/* ============================================================
+   HERO – DESKTOP OPTIMIZATION
+   ============================================================ */
+
+/* ---------- Standard Desktop (1200px - 1440px) ---------- */
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .hero-container {
+        max-width: 1140px;
+        padding: 0 2.5rem;
+    }
+
+    .hero-text {
+        max-width: 580px;
+        gap: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(3rem, 3.8vw, 3.6rem);
+    }
+
+    .hero-text .hero-sub {
+        font-size: 0.95rem;
+        max-width: 480px;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 11px 28px;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-metrics-inline {
+        gap: 1.5rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.7rem;
+    }
+}
+
+/* ---------- Large Desktop (1441px - 1920px) ---------- */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .hero-container {
+        max-width: 1300px;
+    }
+
+    .hero-text {
+        max-width: 680px;
+        gap: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(3.6rem, 4vw, 4.2rem);
+        font-weight: 400;
+    }
+
+    .hero-text .hero-sub {
+        font-size: 1.05rem;
+        max-width: 540px;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 13px 36px;
+        font-size: 0.8rem;
+        letter-spacing: 1.2px;
+    }
+
+    .hero-metrics-inline {
+        gap: 2rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.75rem;
+    }
+}
+
+/* ---------- Ultra Wide (1921px+) ---------- */
+@media (min-width: 1921px) {
+    .hero-container {
+        max-width: 1500px;
+    }
+
+    .hero-text {
+        max-width: 750px;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(4.2rem, 4.5vw, 4.8rem);
+        font-weight: 400;
+    }
+
+    .hero-text .hero-sub {
+        font-size: 1.15rem;
+        max-width: 600px;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 15px 42px;
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-metrics-inline {
+        gap: 2.5rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.8rem;
+    }
+
+    .scroll-down {
+        bottom: 50px;
+    }
+}
+
+/* ============================================================
+   HERO – TABLET OPTIMIZATION
+   ============================================================ */
+
+/* ---------- Tablets (768px - 1024px) ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero-container {
+        padding-top: 70px;
+        justify-content: flex-start;
+    }
+
+    .hero-text {
+        max-width: 50%;
+        gap: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+        letter-spacing: -0.3px;
+    }
+
+    .hero-text .hero-sub {
+        font-size: 0.85rem;
+        max-width: 380px;
+        line-height: 1.6;
+    }
+
+    .hero-super-tag {
+        font-size: 0.6rem;
+        padding-left: 28px;
+        letter-spacing: 2px;
+    }
+
+    .hero-super-tag::before {
+        width: 18px;
+    }
+
+    .hero-metrics-inline {
+        gap: 1rem 1.5rem;
+        padding-top: 0.8rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.65rem;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 10px 22px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .scroll-down {
+        bottom: 25px;
+    }
+
+    .scroll-down .scroll-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            to right,
+            rgba(15, 43, 92, 0.88) 40%,
+            rgba(11, 19, 43, 0.6) 100%
+        );
+    }
+}
+
+/* ---------- Landscape Tablets ---------- */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2rem, 3vw, 2.6rem);
+    }
+
+    .hero-text .hero-sub {
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 8px 20px;
+        font-size: 0.65rem;
+    }
+
+    .hero-metrics-inline {
+        gap: 1rem 1.2rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.6rem;
+    }
+
+    .scroll-down {
+        bottom: 15px;
+    }
+}
+
+/* ============================================================
+   HERO – MOBILE OPTIMIZATION
+   ============================================================ */
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-container {
+        justify-content: center;
+        text-align: center;
+        padding-top: 60px;
+        padding: 60px 1rem 0 1rem;
+    }
+
+    .hero-text {
+        align-items: center;
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+        letter-spacing: -0.2px;
+        font-weight: 400;
+    }
+
+    .hero-text .hero-sub {
+        font-size: 0.85rem;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .hero-super-tag {
+        padding-left: 0;
+        font-size: 0.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-super-tag::before {
+        display: none;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        gap: 0.6rem;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 11px 20px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-metrics-inline {
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+        padding-top: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(15, 43, 92, 0.9) 0%,
+            rgba(11, 19, 43, 0.8) 100%
+        );
+    }
+
+    .scroll-down {
+        bottom: 16px;
+    }
+
+    .scroll-down span {
+        font-size: 0.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .scroll-down .scroll-arrow {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text .hero-sub {
+        font-size: 0.75rem;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        padding: 10px 16px;
+        font-size: 0.65rem;
+    }
+
+    .hero-metrics-inline {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .hero-metrics-inline .metric-item {
+        font-size: 0.55rem;
+    }
+}
+
+/* ============================================================
+   HERO – REDUCED MOTION PREFERENCE
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    .hero-text {
+        animation: none;
+        opacity: 1;
+    }
+
+    .hero-text h1 .gold-highlight {
+        animation: none;
+    }
+
+    .scroll-down {
+        animation: none;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-secondary {
+        transition: none;
+    }
+
+    .hero-btns .btn-primary:hover,
+    .hero-btns .btn-secondary:hover {
+        transform: none;
+    }
+}
+
+/* ============================================================
+   HERO – UTILITY & PERFORMANCE
+   ============================================================ */
+.hero,
+.hero-overlay,
+.hero-text,
+.hero-bg-video {
+    will-change: transform, opacity;
+}
+
+.hero-btns .btn-primary,
+.hero-btns .btn-secondary {
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.hero-bg-video {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Prevent layout shift on load */
+.hero-text {
+    opacity: 0;
+}
+
+.hero-text.visible {
+    opacity: 1;
+}

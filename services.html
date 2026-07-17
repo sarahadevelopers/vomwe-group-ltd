@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Vomwe Group – Elite Security Solutions</title>
+
+    <!-- ====== PREMIUM FONTS ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- ====== FONT AWESOME 6 ====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVBAR – GLOBAL (fixed, glassmorphism)
+    ============================================================ -->
+    <header class="main-header" id="mainHeader" role="banner">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="Vomwe Group - Home">
+                    <img src="vomwe-favicon.webp" alt="Vomwe Group - Security Services Kenya" class="logo-img" />
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navbar Right Actions -->
+            <div class="nav-actions">
+                <a href="tel:0708977746" class="emergency-cta" aria-label="Call 24/7 Control Room">
+                    <span class="cta-pulse"></span>
+                    <div class="cta-text">
+                        <span class="cta-label">24/7 Control Room</span>
+                        <span class="cta-number">0708 977 746</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================================================
+    MOBILE DRAWER – slides in from the right
+    ============================================================ -->
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+    <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <nav aria-label="Mobile navigation">
+            <ul class="drawer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-contacts">
+            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> Operations Hub</p>
+            <a href="tel:0708977746">0708 977 746</a>
+            <a href="tel:0111997393">0111 997 393</a>
+            <p style="margin-top:1rem;"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</p>
+            <a href="mailto:info@vomwegroup.co.ke">info@vomwegroup.co.ke</a>
+            <div class="drawer-cta">
+                <a href="contact.html" class="btn-primary" style="display:block;text-align:center;">Request Free Assessment</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    SERVICES PAGE HERO
+    ============================================================ -->
+    <section class="services-hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-shield-halved" style="margin-right:0.4rem;"></i>
+                Our Capabilities
+            </div>
+            <h1>
+                Comprehensive Security Solutions<br />
+                <span class="gold-highlight">Tailored to Your Risk Landscape.</span>
+            </h1>
+            <p>
+                From manned guarding and K9 units to advanced tracking and risk consultancy —
+                we deliver integrated security for enterprises, events, and high-value assets.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES MAIN LAYOUT
+    ============================================================ -->
+    <div class="container">
+        <div class="services-main">
+
+            <!-- Sticky Sidebar (desktop) -->
+            <aside class="services-sidebar" id="servicesSidebar">
+                <div class="sidebar-title"><i class="fa-solid fa-list" style="margin-right:0.4rem;"></i> Pillars</div>
+                <ul>
+                    <li><a href="#pillar1" class="active-link">Manned Guarding &amp; Defense</a></li>
+                    <li><a href="#pillar2">Specialized Canine Units</a></li>
+                    <li><a href="#pillar3">SecurTech &amp; Tracking</a></li>
+                    <li><a href="#pillar4">Risk Advisory &amp; Response</a></li>
+                </ul>
+            </aside>
+
+            <!-- Content area -->
+            <div class="services-content">
+
+                <!-- ============================================================
+                PILLAR 1: Manned Guarding & Tactical Defense
+                ============================================================ -->
+                <section class="pillar-section" id="pillar1">
+                    <div class="pillar-header">
+                        <div class="pillar-number"><i class="fa-solid fa-helmet-safety" style="margin-right:0.4rem;"></i> Pillar 1</div>
+                        <h2>Manned Guarding &amp; Tactical Defense</h2>
+                        <p>Physical security delivered by rigorously vetted, sober, and punctual personnel.</p>
+                    </div>
+
+                    <div class="service-cards-grid">
+
+                        <!-- Card: Security Guarding -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+                            <h3>Security Guarding</h3>
+                            <p class="card-desc">Well-trained, sober, and alert guards who perform diligently to your assignments. Uniformed and monitored 24/7.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-clock"></i> Punctuality Verified</span>
+                                <span><i class="fa-solid fa-glass"></i> 100% Sobriety</span>
+                                <span><i class="fa-solid fa-eye"></i> Alertness Under Pressure</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Request Guarding Specs <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: VIP Bodyguarding -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-crown"></i></div>
+                            <h3>VIP Bodyguarding</h3>
+                            <p class="card-desc">Discreet, highly trained close protection for executives, dignitaries, and high-net-worth individuals.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-shield"></i> Threat Assessment</span>
+                                <span><i class="fa-solid fa-route"></i> Route Planning</span>
+                                <span><i class="fa-solid fa-handshake"></i> Confidentiality</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Enquire About VIP Protection <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Residential Security -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                            <h3>Residential Security</h3>
+                            <p class="card-desc">Protecting gated communities, estates, and private residences with perimeter patrols and access control.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-fence"></i> Perimeter Patrols</span>
+                                <span><i class="fa-solid fa-user-check"></i> Access Control</span>
+                                <span><i class="fa-solid fa-clock"></i> 24/7 Monitoring</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Secure Your Home <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Industrial Services -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-factory"></i></div>
+                            <h3>Industrial Services</h3>
+                            <p class="card-desc">Comprehensive security for warehouses, manufacturing plants, and logistics hubs.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-warehouse"></i> Asset Protection</span>
+                                <span><i class="fa-solid fa-truck"></i> Logistics Security</span>
+                                <span><i class="fa-solid fa-radar"></i> 24/7 Surveillance</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Discuss Industrial Needs <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Mobile Patrols -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-car-side"></i></div>
+                            <h3>Mobile Patrols</h3>
+                            <p class="card-desc">Random patrols at set intervals using automated threat detection systems and rapid response vehicles.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-route"></i> Random Intervals</span>
+                                <span><i class="fa-solid fa-bell"></i> Alarm Response</span>
+                                <span><i class="fa-solid fa-video"></i> Automated Monitoring</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Request Patrol Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ============================================================
+                PILLAR 2: Specialized Canine Units
+                ============================================================ -->
+                <section class="pillar-section" id="pillar2" style="background:var(--light-bg);margin:0 -2rem;padding:3rem 2rem 4rem 2rem;border-radius:var(--card-radius);">
+                    <div class="pillar-header">
+                        <div class="pillar-number"><i class="fa-solid fa-dog" style="margin-right:0.4rem;"></i> Pillar 2</div>
+                        <h2>Specialized Canine Units</h2>
+                        <p>Elite K9 services for detection, protection, and tactical support.</p>
+                    </div>
+
+                    <div class="service-cards-grid">
+
+                        <!-- Card: Sniffing & Detection -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <h3>Sniffing &amp; Detection</h3>
+                            <p class="card-desc">Dogs trained to detect narcotics, explosives, and other threats, ensuring a safe environment for your business or event.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-bomb"></i> Explosive Detection</span>
+                                <span><i class="fa-solid fa-capsules"></i> Narcotics</span>
+                                <span><i class="fa-solid fa-shield"></i> Threat Containment</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Deploy K9 Detection <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Leasing Options -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-calendar-plus"></i></div>
+                            <h3>Leasing Options</h3>
+                            <p class="card-desc">Flexible short-term event leasing or long-term property leases with trained security dogs.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-calendar"></i> Short-Term</span>
+                                <span><i class="fa-solid fa-building"></i> Long-Term</span>
+                                <span><i class="fa-solid fa-handshake"></i> Custom Terms</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Inquire About Leasing <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Breeding & Training -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-paw"></i></div>
+                            <h3>Breeding &amp; Training</h3>
+                            <p class="card-desc">Top-quality breeding with excellent temperaments. Mating services and professional obedience training available.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-dna"></i> Elite Breeding</span>
+                                <span><i class="fa-solid fa-medal"></i> Obedience Training</span>
+                                <span><i class="fa-solid fa-heart"></i> Temperament Selection</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Discuss Breeding Program <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ============================================================
+                PILLAR 3: SecurTech Infrastructure & Tracking (Dark Mode)
+                ============================================================ -->
+                <section class="pillar-section pillar-dark" id="pillar3">
+                    <div class="pillar-header">
+                        <div class="pillar-number"><i class="fa-solid fa-microchip" style="margin-right:0.4rem;"></i> Pillar 3</div>
+                        <h2>SecurTech Infrastructure &amp; Tracking</h2>
+                        <p>Advanced hardware, CCTV, and real-time tracking for total asset visibility.</p>
+                    </div>
+
+                    <div class="service-cards-grid">
+
+                        <!-- Card: Car / Fleet Tracking -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <h3>Car &amp; Fleet Tracking</h3>
+                            <p class="card-desc">GPS tracking accessible via web portal, mobile app, or SMS. Real-time monitoring and control.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-satellite"></i> GPS Real-Time</span>
+                                <span><i class="fa-solid fa-mobile"></i> App &amp; SMS</span>
+                                <span><i class="fa-solid fa-route"></i> Route History</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Get Tracking Quote <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Asset & Animal Tracking -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <h3>Asset &amp; Animal Tracking</h3>
+                            <p class="card-desc">Track valuable assets, equipment, and even livestock with rugged GPS devices and intuitive dashboards.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-box"></i> Asset Monitoring</span>
+                                <span><i class="fa-solid fa-cow"></i> Animal Tracking</span>
+                                <span><i class="fa-solid fa-chart-line"></i> Analytics</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Explore Tracking Solutions <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Security Systems Installation -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-bell"></i></div>
+                            <h3>Security Systems Installation</h3>
+                            <p class="card-desc">Intruder alarms, fire detection, baggage scanners, metal detectors, and under-vehicle surveillance systems.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-camera"></i> CCTV</span>
+                                <span><i class="fa-solid fa-fire-extinguisher"></i> Fire Alarms</span>
+                                <span><i class="fa-solid fa-scanner"></i> Scanners</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Request Installation Quote <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: CCTV Installation -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-video"></i></div>
+                            <h3>CCTV Installation</h3>
+                            <p class="card-desc">Professional installation of high-definition CCTV systems for schools, workplaces, shops, and remote sites.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-camera"></i> HD Cameras</span>
+                                <span><i class="fa-solid fa-cloud"></i> Remote Access</span>
+                                <span><i class="fa-solid fa-wifi"></i> Wireless &amp; Wired</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Schedule CCTV Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ============================================================
+                PILLAR 4: Tactical Response & Risk Advisory
+                ============================================================ -->
+                <section class="pillar-section" id="pillar4">
+                    <div class="pillar-header">
+                        <div class="pillar-number"><i class="fa-solid fa-clipboard-check" style="margin-right:0.4rem;"></i> Pillar 4</div>
+                        <h2>Tactical Response &amp; Risk Advisory</h2>
+                        <p>Strategic consultancy, training, investigations, and rapid alarm response.</p>
+                    </div>
+
+                    <div class="service-cards-grid">
+
+                        <!-- Card: Security Consultancy -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <h3>Security Consultancy</h3>
+                            <p class="card-desc">Expert advice on risk assessments, security policies, and operational frameworks for your organization.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-clipboard"></i> Risk Audits</span>
+                                <span><i class="fa-solid fa-scale-balanced"></i> Compliance</span>
+                                <span><i class="fa-solid fa-lightbulb"></i> Strategy</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Schedule a Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Security Training -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3>Security Training</h3>
+                            <p class="card-desc">Professional training programs for in-house security teams, covering guard protocols, emergency response, and more.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-book"></i> Protocols</span>
+                                <span><i class="fa-solid fa-bolt"></i> Emergency Response</span>
+                                <span><i class="fa-solid fa-users"></i> Team Drills</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Enquire About Training <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Investigations -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <h3>Investigations</h3>
+                            <p class="card-desc">Discreet investigations for theft, fraud, employee misconduct, and due diligence.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-file-lines"></i> Reports</span>
+                                <span><i class="fa-solid fa-gavel"></i> Evidence</span>
+                                <span><i class="fa-solid fa-user-secret"></i> Discretion</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Initiate an Investigation <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Event Security Management -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            <h3>Event Security Management</h3>
+                            <p class="card-desc">Crowd control, access management, perimeter security, and emergency planning for corporate and private events.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-people-arrows"></i> Crowd Control</span>
+                                <span><i class="fa-solid fa-right-to-bracket"></i> Access Control</span>
+                                <span><i class="fa-solid fa-triangle-exclamation"></i> Emergency Plans</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Plan Your Event Security <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Risk Management Consultancy -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-chart-scatter"></i></div>
+                            <h3>Risk Management Consultancy</h3>
+                            <p class="card-desc">Identify, assess, and mitigate business risks with customized security frameworks and crisis management plans.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-chart-pie"></i> Risk Assessment</span>
+                                <span><i class="fa-solid fa-arrows-rotate"></i> Mitigation</span>
+                                <span><i class="fa-solid fa-file-pdf"></i> Crisis Plans</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Request Risk Assessment <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card: Alarm Response -->
+                        <div class="service-card">
+                            <div class="card-icon"><i class="fa-solid fa-bell-exclamation"></i></div>
+                            <h3>Alarm Response</h3>
+                            <p class="card-desc">Automated sensors (motion, door/window, high-decibel alarms) linked to our patrol team for rapid intervention.</p>
+                            <div class="card-metrics">
+                                <span><i class="fa-solid fa-sensor"></i> Motion Sensors</span>
+                                <span><i class="fa-solid fa-bolt"></i> Rapid Dispatch</span>
+                                <span><i class="fa-solid fa-sign"></i> Visual Deterrents</span>
+                            </div>
+                            <div class="card-cta">
+                                <a href="contact.html" class="btn-text-link">Set Up Alarm Response <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div><!-- /services-content -->
+        </div><!-- /services-main -->
+    </div><!-- /container -->
+
+    <!-- ============================================================
+    GLOBAL FOOTER
+    ============================================================ -->
+    <footer class="main-footer">
+        <div class="container">
+
+            <!-- Main Footer Grid – 4 columns -->
+            <div class="footer-grid">
+
+                <!-- Column 1: Brand & Legal -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="vomwe-favicon.webp" alt="Vomwe Group - Security Services Kenya" class="logo-img" />
+                        </a>
+                    </div>
+                    <p>
+                        Vomwe Limited is a fully licensed security firm, duly incorporated
+                        and registered under the Companies Act 2015, Laws of Kenya.
+                        Operating continuously since 2019.
+                    </p>
+                    <div class="legal-note">
+                        <i class="fa-solid fa-shield-halved" style="color:var(--accent-gold);margin-right:0.5rem;"></i>
+                        Fully Licensed · PSRA Compliant · Safety Guaranteed
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Operational Regions (compact) -->
+                <div class="footer-col">
+                    <h5>Operational Regions</h5>
+                    <div class="county-grid">
+                        <span><i class="fa-solid fa-location-dot"></i> Nairobi</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Machakos</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Kajiado</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Mombasa</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Kilifi</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Kisumu</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Busia</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Marsabit</span>
+                    </div>
+                </div>
+
+                <!-- Column 4: Headquarters + Social + Developer Credit -->
+                <div class="footer-col footer-contact-col">
+                    <h5>Headquarters</h5>
+                    <div class="contact-detail">
+                        <div class="label"><i class="fa-solid fa-building"></i> Office</div>
+                        <div class="address">
+                            <strong>Mastive Building</strong><br />
+                            1st Floor, Room 33, Kitengela<br />
+                            Directly Opposite Pizza Inn
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="label"><i class="fa-solid fa-phone"></i> Operations Hub</div>
+                        <a href="tel:0708977746">0708 977 746</a><br />
+                        <a href="tel:0111997393">0111 997 393</a>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="label"><i class="fa-solid fa-envelope"></i> Email</div>
+                        <a href="mailto:info@vomwegroup.co.ke">info@vomwegroup.co.ke</a>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="label"><i class="fa-solid fa-location-dot"></i> Location</div>
+                        <a href="https://maps.app.goo.gl/Kbzo66eSk4ktuTHP9" target="_blank" rel="noopener noreferrer" style="color:var(--accent-gold);font-size:0.85rem;">
+                            View on Google Maps <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <!-- Developer Credits -->
+                    <div class="developer-credit">
+                        Designed &amp; Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener noreferrer">Saraha Developers</a>
+                    </div>
+                </div>
+
+            </div><!-- /footer-grid -->
+
+            <!-- Sub-Footer (bottom bar) -->
+            <div class="sub-footer">
+                <span>&copy; 2026 Vomwe Limited. All Rights Reserved. <span style="color:var(--accent-gold);">|</span> Safety Guaranteed.</span>
+                <div class="sub-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">PSRA Compliance</a>
+                </div>
+            </div>
+
+        </div><!-- /container -->
+    </footer>
+
+    <!-- ============================================================
+    FLOATING WHATSAPP
+    ============================================================ -->
+    <a href="https://wa.me/254708987746?text=Hello%20Vomwe%20Group%2C%20I%27d%20like%20to%20inquire%20about%20your%20security%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+    JAVASCRIPT – Mobile Drawer + Sidebar Scroll Spy
+    ============================================================ -->
+    <script src="services.js"></script>
+
+</body>
+</html>

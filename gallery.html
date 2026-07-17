@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Vomwe Group – Visual Proof of Security Operations</title>
+
+    <!-- ====== PREMIUM FONTS ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- ====== FONT AWESOME 6 ====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+   <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVBAR – GLOBAL
+    ============================================================ -->
+    <!-- ============================================================
+    NAVBAR – GLOBAL (fixed, glassmorphism)
+    ============================================================ -->
+    <!-- ============================================================
+    NAVBAR – GLOBAL (fixed, glassmorphism)
+    ============================================================ -->
+<header class="main-header" id="mainHeader" role="banner">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html" aria-label="Vomwe Group - Home">
+                <img src="vomwe-favicon.webp" alt="Vomwe Group - Security Services Kenya" class="logo-img" />
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navbar Right Actions -->
+        <div class="nav-actions">
+            <!-- Emergency CTA -->
+            <a href="tel:0708977746" class="emergency-cta" aria-label="Call 24/7 Control Room">
+                <span class="cta-pulse"></span>
+                <div class="cta-text">
+                    <span class="cta-label">24/7 Control Room</span>
+                    <span class="cta-number">0708 977 746</span>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+           <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+        </div>
+
+    </div>
+</header>
+
+<!-- ============================================================
+    MOBILE DRAWER – slides in from the right
+    ============================================================ -->
+<!-- Overlay -->
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
+<!-- Drawer -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <nav aria-label="Mobile navigation">
+        <ul class="drawer-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="drawer-contacts">
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> Operations Hub</p>
+        <a href="tel:0708977746">0708 977 746</a>
+        <a href="tel:0111997393">0111 997 393</a>
+
+        <p style="margin-top:1rem;"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</p>
+        <a href="mailto:info@vomwegroup.co.ke">info@vomwegroup.co.ke</a>
+
+        <div class="drawer-cta">
+            <a href="contact.html" class="btn-primary" style="display:block;text-align:center;">Request Free Assessment</a>
+        </div>
+    </div>
+</div>
+    <!-- ============================================================
+    GALLERY HERO
+    ============================================================ -->
+    <section class="gallery-hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-regular fa-images" style="margin-right:0.4rem;"></i>
+                Visual Proof of Operations
+            </div>
+            <h1>
+                Operational Footprint<br />
+                <span class="gold-highlight">Across Kenya.</span>
+            </h1>
+            <p>
+                Real deployments, real assets, real results. Browse our gallery to see
+                Vomwe Group in action — from elite guarding to advanced tracking systems.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FILTER BAR (Sticky)
+    ============================================================ -->
+    <div class="filter-bar" id="filterBar">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="guarding">Manned Guarding</button>
+            <button class="filter-btn" data-filter="canine">Canine Units</button>
+            <button class="filter-btn" data-filter="tech">Tech &amp; Installations</button>
+            <button class="filter-btn" data-filter="events">Event Operations</button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    GALLERY GRID
+    ============================================================ -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- ===== CARD 1: Guarding ===== -->
+                <div class="gallery-card" data-category="guarding" data-location="Nairobi County" data-title="Industrial Perimeter Patrol" data-desc="Armed and uniformed guards conducting a perimeter sweep at a logistics hub in Nairobi. Punctuality and alertness verified.">
+                    <div class="card-inner">
+                        <!-- Using placeholder images from picsum with specific IDs for variety -->
+                        <img src="https://picsum.photos/id/90/600/450" alt="Industrial Perimeter Patrol in Nairobi" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> NAIROBI COUNTY</div>
+                                <div class="meta-title">Industrial Perimeter Patrol</div>
+                                <div class="meta-category">Manned Guarding</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 2: Canine ===== -->
+                <div class="gallery-card" data-category="canine" data-location="Mombasa County" data-title="K9 Explosive Detection Sweep" data-desc="Elite canine unit performing a narcotics and explosives sweep at the Mombasa port. Highly trained detection dogs in action.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/127/600/450" alt="K9 Explosive Detection Sweep in Mombasa" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> MOMBASA COUNTY</div>
+                                <div class="meta-title">K9 Explosive Detection Sweep</div>
+                                <div class="meta-category">Canine Units</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 3: Tech ===== -->
+                <div class="gallery-card" data-category="tech" data-location="Kitengela HQ" data-title="Control Room Oversight System" data-desc="24/7 monitoring center at Kitengela Head Office displaying live feeds from client sites across 8 counties.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/61/600/450" alt="Control Room Oversight System at Kitengela HQ" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> KITENGELA HQ</div>
+                                <div class="meta-title">Control Room Oversight System</div>
+                                <div class="meta-category">Tech &amp; Installations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 4: Events ===== -->
+                <div class="gallery-card" data-category="events" data-location="Kisumu County" data-title="Corporate Event Crowd Control" data-desc="Professional crowd management and access control at a large corporate gala in Kisumu. Trained event security personnel.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/71/600/450" alt="Corporate Event Crowd Control in Kisumu" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> KISUMU COUNTY</div>
+                                <div class="meta-title">Corporate Event Crowd Control</div>
+                                <div class="meta-category">Event Operations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 5: Guarding ===== -->
+                <div class="gallery-card" data-category="guarding" data-location="Kajiado County" data-title="Residential Estate Security Post" data-desc="Sober, alert guards manning a gated community entrance in Kajiado with access control and visitor verification.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/91/600/450" alt="Residential Estate Security Post in Kajiado" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> KAJIADO COUNTY</div>
+                                <div class="meta-title">Residential Estate Security Post</div>
+                                <div class="meta-category">Manned Guarding</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 6: Canine ===== -->
+                <div class="gallery-card" data-category="canine" data-location="Kilifi County" data-title="Warehouse K9 Protection Unit" data-desc="A trained security dog and handler conducting a patrol sweep at a warehouse in Kilifi to deter theft and intrusion.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/137/600/450" alt="Warehouse K9 Protection Unit in Kilifi" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> KILIFI COUNTY</div>
+                                <div class="meta-title">Warehouse K9 Protection Unit</div>
+                                <div class="meta-category">Canine Units</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 7: Tech ===== -->
+                <div class="gallery-card" data-category="tech" data-location="Machakos County" data-title="CCTV & Alarm System Installation" data-desc="Expert installation of high-definition CCTV cameras and intruder alarm systems at a commercial complex in Machakos.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/62/600/450" alt="CCTV Installation in Machakos" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> MACHAKOS COUNTY</div>
+                                <div class="meta-title">CCTV &amp; Alarm System Installation</div>
+                                <div class="meta-category">Tech &amp; Installations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 8: Events ===== -->
+                <div class="gallery-card" data-category="events" data-location="Nairobi County" data-title="Concert Perimeter Security" data-desc="Perimeter security and access management at a large outdoor concert in Nairobi. Trained event response team deployed.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/47/600/450" alt="Concert Perimeter Security in Nairobi" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> NAIROBI COUNTY</div>
+                                <div class="meta-title">Concert Perimeter Security</div>
+                                <div class="meta-category">Event Operations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 9: Guarding ===== -->
+                <div class="gallery-card" data-category="guarding" data-location="Busia County" data-title="Border Logistics Protection" data-desc="Armed guards and logistics security team protecting a high-value cargo facility near the Busia border crossing.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/70/600/450" alt="Border Logistics Protection in Busia" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> BUSIA COUNTY</div>
+                                <div class="meta-title">Border Logistics Protection</div>
+                                <div class="meta-category">Manned Guarding</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 10: Canine ===== -->
+                <div class="gallery-card" data-category="canine" data-location="Marsabit County" data-title="Remote Site K9 Deployment" data-desc="Specialized canine unit deployed to a remote site in Marsabit for threat detection and asset protection.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/128/600/450" alt="Remote Site K9 Deployment in Marsabit" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> MARSABIT COUNTY</div>
+                                <div class="meta-title">Remote Site K9 Deployment</div>
+                                <div class="meta-category">Canine Units</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 11: Tech ===== -->
+                <div class="gallery-card" data-category="tech" data-location="Mombasa County" data-title="Vehicle & Cargo Scanner Setup" data-desc="Installation of under-vehicle surveillance and cargo scanning systems at a high-security logistics hub in Mombasa.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/42/600/450" alt="Vehicle & Cargo Scanner Setup in Mombasa" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> MOMBASA COUNTY</div>
+                                <div class="meta-title">Vehicle &amp; Cargo Scanner Setup</div>
+                                <div class="meta-category">Tech &amp; Installations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== CARD 12: Events ===== -->
+                <div class="gallery-card" data-category="events" data-location="Kilifi County" data-title="Private Function VIP Protection" data-desc="Discreet VIP bodyguarding and access control for a private function at a high-end resort in Kilifi.">
+                    <div class="card-inner">
+                        <img src="https://picsum.photos/id/77/600/450" alt="Private Function VIP Protection in Kilifi" loading="lazy" />
+                        <div class="card-overlay">
+                            <span class="expand-icon"><i class="fa-solid fa-plus"></i></span>
+                            <div class="card-meta">
+                                <div class="meta-location"><i class="fa-solid fa-location-dot"></i> KILIFI COUNTY</div>
+                                <div class="meta-title">Private Function VIP Protection</div>
+                                <div class="meta-category">Event Operations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /gallery-grid -->
+        </div><!-- /container -->
+    </section>
+
+    <!-- ============================================================
+    LIGHTBOX MODAL
+    ============================================================ -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="lightbox-inner">
+            <div class="lightbox-image-wrap">
+                <img src="" alt="" id="lightboxImage" />
+            </div>
+            <div class="lightbox-sidebar">
+                <div>
+                    <span class="lb-badge" id="lightboxBadge">📍 NAIROBI COUNTY</span>
+                    <h3 id="lightboxTitle">Industrial Perimeter Patrol</h3>
+                    <p class="lb-desc" id="lightboxDesc">Armed and uniformed guards conducting a perimeter sweep at a logistics hub in Nairobi. Punctuality and alertness verified.</p>
+                </div>
+                <div>
+                    <div class="lb-meta">
+                        <div class="lb-location"><i class="fa-solid fa-location-dot"></i> <span id="lightboxLocation">Nairobi County</span></div>
+                        <div class="lb-category" id="lightboxCategory">Manned Guarding</div>
+                    </div>
+                    <div class="lb-cta">
+                        <a href="contact.html" class="btn-primary">
+                            <i class="fa-regular fa-shield-halved" style="margin-right:0.5rem;"></i>
+                            Inquire About This Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    GLOBAL FOOTER -->
+<footer class="main-footer">
+    <div class="container">
+
+        <!-- Main Footer Grid – 4 columns -->
+        <div class="footer-grid">
+
+            <!-- Column 1: Brand & Legal -->
+            <div class="footer-brand">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="vomwe-favicon.webp" alt="Vomwe Group - Security Services Kenya" class="logo-img" />
+                    </a>
+                </div>
+                <p>
+                    Vomwe Limited is a fully licensed security firm, duly incorporated
+                    and registered under the Companies Act 2015, Laws of Kenya.
+                    Operating continuously since 2019.
+                </p>
+                <div class="legal-note">
+                    <i class="fa-solid fa-shield-halved" style="color:var(--accent-gold);margin-right:0.5rem;"></i>
+                    Fully Licensed · PSRA Compliant · Safety Guaranteed
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Operational Regions (compact) -->
+            <div class="footer-col">
+                <h5>Operational Regions</h5>
+                <div class="county-grid">
+                    <span><i class="fa-solid fa-location-dot"></i> Nairobi</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Machakos</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Kajiado</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Mombasa</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Kilifi</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Kisumu</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Busia</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Marsabit</span>
+                </div>
+            </div>
+
+            <!-- Column 4: Headquarters + Social + Developer Credit -->
+            <div class="footer-col footer-contact-col">
+                <h5>Headquarters</h5>
+                <div class="contact-detail">
+                    <div class="label"><i class="fa-solid fa-building"></i> Office</div>
+                    <div class="address">
+                        <strong>Mastive Building</strong><br />
+                        1st Floor, Room 33, Kitengela<br />
+                        Directly Opposite Pizza Inn
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="label"><i class="fa-solid fa-phone"></i> Operations Hub</div>
+                    <a href="tel:0708977746">0708 977 746</a><br />
+                    <a href="tel:0111997393">0111 997 393</a>
+                </div>
+                <div class="contact-detail">
+                    <div class="label"><i class="fa-solid fa-envelope"></i> Email</div>
+                    <a href="mailto:info@vomwegroup.co.ke">info@vomwegroup.co.ke</a>
+                </div>
+                <div class="contact-detail">
+                    <div class="label"><i class="fa-solid fa-location-dot"></i> Location</div>
+                    <a href="https://maps.app.goo.gl/Kbzo66eSk4ktuTHP9" target="_blank" rel="noopener noreferrer" style="color:var(--accent-gold);font-size:0.85rem;">
+                        View on Google Maps <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i>
+                    </a>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <!-- Developer Credits -->
+                <div class="developer-credit">
+                    Designed &amp; Developed by <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener noreferrer">Saraha Developers</a>
+                </div>
+            </div>
+
+        </div><!-- /footer-grid -->
+
+        <!-- Sub-Footer (bottom bar) -->
+        <div class="sub-footer">
+            <span>&copy; 2026 Vomwe Limited. All Rights Reserved. <span style="color:var(--accent-gold);">|</span> Safety Guaranteed.</span>
+            <div class="sub-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">PSRA Compliance</a>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+</footer>
+
+    <!-- ============================================================
+    FLOATING WHATSAPP
+    ============================================================ -->
+    <a href="https://wa.me/254708987746?text=Hello%20Vomwe%20Group%2C%20I%27d%20like%20to%20inquire%20about%20your%20security%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <!-- ============================================================
+    JAVASCRIPT – Mobile Drawer + Filtering + Lightbox
+    ============================================================ -->
+    <script src="gallery.js"></script>
+
+</body>
+</html>
