@@ -1,0 +1,15 @@
+# ============================================================
+# ROBOTS.TXT – Vomwe Group
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# ---- Disallow template files ----
+Disallow: /blog-post-template.html
+
+# ---- Disallow IDE & system folders ----
+Disallow: /.vscode/
+
+# ---- Sitemap location ----
+Sitemap: https://vomwegroup.co.ke/sitemap.xml

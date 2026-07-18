@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- ==========================================================
+         MAIN PAGES (16 Unique URLs)
+    ========================================================== -->
+    <url>
+        <loc>https://vomwegroup.co.ke/</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/about.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/services.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/gallery.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blog.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/contact.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ==========================================================
+         BLOG POSTS – Kitengela Local SEO
+    ========================================================== -->
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-psra-compliance-guide.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-warehouse-security.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-event-sniffing-dogs.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-k9-leasing-vs-guarding.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-gps-fleet-tracking.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-cctv-installation.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-residential-security.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-holiday-home-security.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-cargo-scanner-solutions.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://vomwegroup.co.ke/blogs/blog-kitengela-biometric-access-control.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
