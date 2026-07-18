@@ -379,25 +379,24 @@
             transform: translateY(-7.5px) rotate(-45deg);
         }
 
-        .mobile-drawer {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 100%;
-            max-width: 380px;
-            height: 100vh;
-            background: var(--primary-blue-dark);
-            z-index: 9998;
-            padding: 6rem 2.5rem 2.5rem 2.5rem;
-            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow-y: auto;
-            box-shadow: -8px 0 40px rgba(0, 0, 0, 0.4);
-        }
+       .mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;           /* Hidden off‑screen */
+    width: 100%;
+    max-width: 380px;
+    height: 100vh;
+    background: var(--primary-blue-dark);
+    z-index: 9998;
+    padding: 6rem 2.5rem 2.5rem 2.5rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    box-shadow: -8px 0 40px rgba(0, 0, 0, 0.4);
+}
 
-        .mobile-drawer.open {
-            right: 0;
-        }
+.mobile-drawer.open {
+    right: 0;               /* Slides into view */
+}
 
         .mobile-drawer .drawer-links {
             display: flex;

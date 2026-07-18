@@ -491,15 +491,16 @@
 
         /* --- 1. IDENTITY MINI-HERO --- */
         .about-hero {
-            position: relative;
-            padding: 10rem 0 6rem 0;
-            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--dark-bg) 100%);
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cGF0aCBkPSJNMzAgMEw2MCAzMCAzMCA2MCAwIDMwIDAgMzB6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz48L3N2Zz4='),
-                radial-gradient(ellipse at 20% 50%, rgba(223, 183, 108, 0.06) 0%, transparent 60%),
-                linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--dark-bg) 100%);
-            background-size: 80px 80px, cover, cover;
-            overflow: hidden;
-        }
+              position: relative;
+    padding: 10rem 0 6rem 0;
+    overflow: hidden;
+
+    /* Premium layered background: dark overlay + cinematic image */
+    background:
+        linear-gradient(135deg, rgba(9, 27, 61, 0.90) 0%, rgba(11, 19, 43, 0.92) 100%),
+        url('https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1600&h=900&fit=crop&crop=center')
+        center center / cover no-repeat;
+}
 
         .about-hero::after {
             content: '';
@@ -1357,4 +1358,344 @@
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     margin-top: 0.2rem;
+}
+/* ============================================================
+   CEO SECTION – Premium Leadership Card (No Cropping)
+   ============================================================ */
+
+.ceo-section {
+    padding: 5rem 0;
+    background: var(--light-bg);
+    position: relative;
+}
+
+.ceo-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(223, 183, 108, 0.02), transparent 60%);
+    pointer-events: none;
+}
+
+/* ---------- CEO Card ---------- */
+.ceo-card {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3.5rem;
+    align-items: center;
+    background: var(--pure-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 43, 92, 0.06);
+    border: 1px solid rgba(15, 43, 92, 0.04);
+    transition: all 0.4s ease;
+}
+
+.ceo-card:hover {
+    box-shadow: 0 30px 80px rgba(15, 43, 92, 0.08);
+    transform: translateY(-4px);
+}
+
+/* ---------- CEO Image – No Cropping! ---------- */
+.ceo-image-wrap {
+    position: relative;
+    width: 100%;
+    height: auto; /* Auto height, controlled by aspect-ratio */
+    aspect-ratio: 4 / 5; /* Perfect portrait ratio – no cropping */
+    overflow: hidden;
+    background: var(--slate-dark);
+}
+
+.ceo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Keeps the face visible */
+    display: block;
+    transition: transform 0.7s ease;
+    filter: brightness(0.95) contrast(1.05);
+}
+
+.ceo-card:hover .ceo-image {
+    transform: scale(1.02);
+}
+
+/* ---------- Overlay Badge ---------- */
+.ceo-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 2rem 1.8rem 2rem;
+    background: linear-gradient(to top, rgba(9, 27, 61, 0.75) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.ceo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-gold);
+    background: rgba(223, 183, 108, 0.08);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(223, 183, 108, 0.1);
+}
+
+/* ---------- CEO Content ---------- */
+.ceo-content {
+    padding: 2rem 3rem 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.ceo-header h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 0 0 0.2rem 0;
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+}
+
+.ceo-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent-gold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+}
+
+/* ---------- Qualifications Badges ---------- */
+.ceo-qualifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0.2rem 0;
+}
+
+.qual-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.3rem 0.9rem;
+    background: rgba(15, 43, 92, 0.04);
+    border: 1px solid rgba(15, 43, 92, 0.04);
+    border-radius: 50px;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.qual-badge i {
+    color: var(--accent-gold);
+    font-size: 0.7rem;
+}
+
+.qual-badge:hover {
+    background: rgba(223, 183, 108, 0.06);
+    border-color: rgba(223, 183, 108, 0.1);
+    color: var(--text-dark);
+}
+
+/* ---------- CEO Bio ---------- */
+.ceo-bio {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    margin: 0;
+}
+
+.ceo-bio strong {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* ---------- CEO Mission Quote ---------- */
+.ceo-mission {
+    position: relative;
+    background: var(--light-bg);
+    padding: 1.8rem 2rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--accent-gold);
+}
+
+.ceo-mission .mission-icon {
+    font-size: 2rem;
+    color: var(--accent-gold);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: -0.5rem;
+}
+
+.ceo-mission blockquote {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text-dark);
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: var(--font-body);
+}
+
+.ceo-mission cite {
+    font-size: 0.8rem;
+    font-style: normal;
+    color: var(--text-muted);
+    font-weight: 400;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+/* ---------- CEO CTA ---------- */
+.ceo-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.2rem;
+}
+
+.ceo-cta .btn-primary,
+.ceo-cta .btn-gold-outline {
+    font-size: 0.85rem;
+    padding: 0.9rem 2rem;
+    border-radius: var(--card-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.ceo-cta .btn-primary {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    border: none;
+}
+
+.ceo-cta .btn-primary:hover {
+    background: var(--accent-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(223, 183, 108, 0.3);
+}
+
+.ceo-cta .btn-gold-outline {
+    background: transparent;
+    color: var(--accent-gold);
+    border: 1.5px solid var(--accent-gold);
+}
+
+.ceo-cta .btn-gold-outline:hover {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   RESPONSIVE – CEO SECTION
+   ============================================================ */
+
+@media (max-width: 992px) {
+    .ceo-card {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .ceo-image-wrap {
+        aspect-ratio: 4 / 5; /* Stays portrait on tablet */
+        max-height: none;
+    }
+
+    .ceo-content {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .ceo-header h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ceo-section {
+        padding: 3.5rem 0;
+    }
+
+    .ceo-image-wrap {
+        aspect-ratio: 3 / 4; /* Slightly taller on mobile for a better portrait */
+    }
+
+    .ceo-content {
+        padding: 1.5rem 1rem 1.8rem 1rem;
+    }
+
+    .ceo-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .ceo-mission blockquote {
+        font-size: 0.95rem;
+    }
+
+    .ceo-mission {
+        padding: 1.2rem 1.2rem;
+    }
+
+    .ceo-cta {
+        flex-direction: column;
+    }
+
+    .ceo-cta .btn-primary,
+    .ceo-cta .btn-gold-outline {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .ceo-qualifications {
+        gap: 0.4rem;
+    }
+
+    .qual-badge {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ceo-image-wrap {
+        aspect-ratio: 3 / 4; /* Maintains tall portrait */
+    }
+
+    .ceo-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .ceo-bio {
+        font-size: 0.85rem;
+    }
+
+    .ceo-mission blockquote {
+        font-size: 0.85rem;
+    }
+
+    .ceo-image-overlay {
+        padding: 1.2rem 1.2rem 1rem 1.2rem;
+    }
+
+    .ceo-badge {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.8rem;
+    }
 }
